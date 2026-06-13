@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fatim Shahbaz - 17-year-old AI/ML Engineer, Cybersecurity Researcher, and Software Developer from Lahore, Pakistan. Creator of RIME, Corruptors.io, JARVIS AI Assistant, and github-autopilot. 2nd Place UMT National Hackathon 2026. Google Gemini AI Hackathon participant.">
+<meta name="keywords" content="Fatim Shahbaz, AI Engineer, ML Engineer, Cybersecurity Researcher, Software Developer, Lahore, Pakistan, RIME, Corruptors.io, JARVIS, github-autopilot, Sentinel-0D, Atlasnet, UMT Hackathon, Google Gemini Hackathon, 17-year-old developer">
+<meta name="author" content="Fatim Shahbaz">
+<meta name="theme-color" content="#0a0a0f">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Fatim Shahbaz | AI/ML Engineer & Cybersecurity Researcher">
+<meta property="og:description" content="17-year-old AI/ML Engineer & Cybersecurity Researcher. Building production-grade AI systems, browser games, and security tools. 2nd Place UMT National Hackathon 2026.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fatim Shahbaz | AI/ML Engineer & Cybersecurity Researcher">
+<meta name="twitter:description" content="17-year-old AI/ML Engineer & Cybersecurity Researcher. Building production-grade AI systems, browser games, and security tools.">
+<title>Fatim Shahbaz | AI/ML Engineer & Cybersecurity Researcher</title>
+<style>
+:root {
+  --bg-deep: #0a0a0f;
+  --bg-primary: #0d1117;
+  --bg-secondary: #11161e;
+  --bg-tertiary: #1a1f2e;
+  --bg-card: #131821;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  --accent-cyan: #00f2fe;
+  --accent-cyan-dim: rgba(0, 242, 254, 0.08);
+  --accent-green: #3fb950;
+  --accent-green-dim: rgba(63, 185, 80, 0.08);
+  --accent-coral: #ff7b72;
+  --accent-coral-dim: rgba(255, 123, 114, 0.08);
+  --accent-purple: #a371f7;
+  --accent-yellow: #d29922;
+  --border-color: #21262d;
+  --border-hover: #30363d;
+  --max-width: 1100px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "Fira Code", Consolas, "Liberation Mono", Menlo, Monaco, monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(0, 242, 254, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(163, 113, 247, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 1px 1px, rgba(0, 242, 254, 0.025) 1px, transparent 0);
+  background-size: 100% 100%, 100% 100%, 32px 32px;
+  overflow-x: hidden;
+}
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: var(--accent-cyan);
+  color: var(--bg-deep);
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  z-index: 1000;
+  transition: top 0.2s;
+  border-radius: 0 0 var(--radius-sm) 0;
+  text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-in {
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.animate-fade {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
+.delay-5 { animation-delay: 0.7s; }
+.delay-6 { animation-delay: 0.85s; }
+.delay-7 { animation-delay: 1s; }
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border-bottom: 1px solid var(--border-color);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.nav-logo span { color: var(--text-muted); font-weight: 400; }
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-cyan);
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+.nav-links a:hover { color: var(--text-primary); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  display: none;
+  background: var(--accent-cyan-dim);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.nav-cta:hover {
+  background: rgba(0, 242, 254, 0.15);
+  border-color: rgba(0, 242, 254, 0.35);
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+.hero-content { max-width: 600px; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent-cyan-dim);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+  color: var(--accent-cyan);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  margin-bottom: 1.5rem;
+  animation: pulse 3s ease-in-out infinite;
+}
+.hero-badge::before {
+  content: "CF";
+  color: var(--accent-green);
+  font-size: 0.6rem;
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+.hero h1 .name {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero h1 .pronouns {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.55em;
+  vertical-align: super;
+  margin-left: 0.3rem;
+}
+.hero-role {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  color: var(--accent-green);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.hero-role .divider { color: var(--border-hover); }
+.hero-location { color: var(--text-muted); font-size: 0.95rem; }
+.hero-desc {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+  max-width: 540px;
+}
+.hero-philosophy {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-cyan));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.1rem;
+  animation: gradientShift 4s ease infinite;
+  margin-bottom: 2rem;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent-cyan);
+  color: var(--bg-deep);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 242, 254, 0.3);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-hover);
+}
+.btn-secondary:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-dim);
+}
+.hero-image { position: relative; flex-shrink: 0; }
+.hero-image-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+.hero-image-wrapper:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 40px rgba(0, 242, 254, 0.15);
+}
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-image-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--accent-cyan);
+  border-right-color: var(--accent-purple);
+  animation: spin 12s linear infinite;
+  opacity: 0.4;
+}
+.hero-image-dots {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(circle, var(--accent-cyan) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+  opacity: 0.3;
+}
+.social-bar {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+}
+.social-link:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-dim);
+  transform: translateY(-2px);
+}
+.social-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+section:last-of-type { border-bottom: none; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+.section-header .section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-color), transparent);
+  margin-left: 0.5rem;
+}
+.section-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--accent-cyan);
+  font-size: 1.1rem;
+}
+
+/* Terminal */
+.terminal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.terminal-header {
+  background: var(--bg-tertiary);
+  padding: 0.8rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.terminal-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.terminal-btn.red { background: var(--accent-coral); }
+.terminal-btn.yellow { background: var(--accent-yellow); }
+.terminal-btn.green { background: var(--accent-green); }
+.terminal-title {
+  margin-left: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.terminal-body {
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  line-height: 2.2;
+}
+.terminal-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.terminal-line + .terminal-line { margin-top: 0.1rem; }
+.terminal-prompt {
+  color: var(--accent-green);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.terminal-key { color: var(--accent-cyan); font-weight: 600; }
+.terminal-value { color: var(--text-primary); }
+.terminal-value.dim { color: var(--text-secondary); }
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.15em;
+  background: var(--accent-cyan);
+  margin-left: 0.3rem;
+  vertical-align: text-bottom;
+  animation: blink 1.1s step-end infinite;
+}
+.terminal-comment { color: var(--text-muted); font-style: italic; }
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent-cyan);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.skill-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+}
+.skill-card:hover::before { opacity: 0.6; }
+.skill-card h4 {
+  color: var(--accent-cyan);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skill-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.skill-card .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+.skill-tag {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  border: 1px solid var(--border-color);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  flex-direction: column;
+}
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 0 0 rgba(0, 242, 254, 0);
+  transition: box-shadow 0.3s ease;
+  pointer-events: none;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 242, 254, 0.3);
+}
+.project-card:hover::before {
+  box-shadow: 0 12px 40px rgba(0, 242, 254, 0.08);
+}
+.project-card.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.project-card.featured .project-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.05), rgba(163, 113, 247, 0.05));
+  border-radius: var(--radius-sm);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  min-height: 200px;
+}
+.project-card.featured .project-visual-text {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  margin-bottom: 0.75rem;
+}
+.project-status.live { color: var(--accent-green); }
+.project-status.live::before {
+  content: "CF";
+  animation: pulse 2s ease-in-out infinite;
+}
+.project-status.hackathon { color: var(--accent-coral); }
+.project-status.game { color: var(--accent-purple); }
+.project-status.open-source { color: var(--accent-yellow); }
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.project-card h3 a:hover { color: var(--accent-cyan); }
+.project-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+.project-card ul {
+  list-style: none;
+  margin-bottom: 1.25rem;
+}
+.project-card ul li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.project-card ul li::before {
+  content: "92";
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+.project-card ul li + li { margin-top: 0.4rem; }
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tech-tag {
+  background: var(--accent-cyan-dim);
+  color: var(--accent-cyan);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+  transition: all 0.2s ease;
+}
+.tech-tag:hover {
+  background: rgba(0, 242, 254, 0.15);
+  transform: scale(1.05);
+}
+
+/* Hackathons */
+.hackathon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.hackathon-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.hackathon-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-coral), var(--accent-yellow));
+  opacity: 0.6;
+}
+.hackathon-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 123, 114, 0.3);
+}
+.hackathon-badge-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.hackathon-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+.hackathon-badge.gold {
+  background: var(--accent-coral-dim);
+  color: var(--accent-coral);
+  border: 1px solid rgba(255, 123, 114, 0.25);
+}
+.hackathon-badge.finalist {
+  background: var(--accent-green-dim);
+  color: var(--accent-green);
+  border: 1px solid rgba(63, 185, 80, 0.25);
+}
+.hackathon-badge.date {
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+}
+.hackathon-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+}
+.hackathon-card .location {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-mono);
+}
+.hackathon-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.hackathon-card .highlight {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+.hackathon-card .stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+.hackathon-card .stat { text-align: center; }
+.hackathon-card .stat-value {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+}
+.hackathon-card .stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Leadership */
+.leadership-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.leadership-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-green), var(--accent-cyan));
+}
+.leadership-card:hover {
+  border-color: rgba(63, 185, 80, 0.3);
+  transform: translateY(-2px);
+}
+.leadership-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  margin-bottom: 0.5rem;
+}
+.leadership-card .role-title {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  margin-bottom: 1.25rem;
+}
+.leadership-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.leadership-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.leadership-stat {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+.leadership-stat:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-2px);
+}
+.leadership-stat .value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+}
+.leadership-stat .label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Education */
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  transition: all 0.3s ease;
+}
+.edu-card:hover {
+  border-color: var(--border-hover);
+  transform: translateX(4px);
+}
+.edu-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--accent-cyan-dim);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-cyan);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+.edu-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.edu-card .edu-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  margin-bottom: 0.75rem;
+}
+.edu-card p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.edu-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.edu-tag {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  border: 1px solid var(--border-color);
+}
+
+/* Achievements */
+.achievements-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.achievement-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all 0.25s ease;
+}
+.achievement-item:hover {
+  border-color: var(--border-hover);
+  transform: translateX(4px);
+}
+.achievement-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.achievement-icon.gold { background: var(--accent-coral-dim); color: var(--accent-coral); }
+.achievement-icon.hack { background: var(--accent-cyan-dim); color: var(--accent-cyan); }
+.achievement-icon.code { background: var(--accent-green-dim); color: var(--accent-green); }
+.achievement-icon.edu { background: rgba(163, 113, 247, 0.08); color: var(--accent-purple); }
+.achievement-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--text-primary);
+}
+.achievement-item p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* Interests */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.interest-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+.interest-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-3px);
+}
+.interest-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.interest-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--text-primary);
+}
+.interest-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Contact */
+.contact-section {
+  background: linear-gradient(180deg, var(--bg-deep), var(--bg-secondary));
+  border-top: 1px solid var(--border-color);
+  padding: 4rem 0 3rem;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.contact-info h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.contact-info p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+}
+.contact-link:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-dim);
+  transform: translateX(4px);
+}
+.contact-link .icon { width: 20px; text-align: center; }
+.contact-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-visual-box {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.05), rgba(163, 113, 247, 0.05));
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.contact-visual-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.08), transparent 60%);
+}
+.contact-visual-box .big-text {
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+.contact-visual-box .sub-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+footer strong { color: var(--text-secondary); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero-image { order: -1; display: flex; justify-content: center; }
+  .hero-desc, .hero-philosophy { margin-left: auto; margin-right: auto; }
+  .hero-actions, .social-bar { justify-content: center; }
+  .projects-grid, .hackathon-grid { grid-template-columns: 1fr; }
+  .project-card.featured { grid-template-columns: 1fr; }
+  .project-card.featured .project-visual { min-height: 120px; }
+  .leadership-stats { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; text-align: center; }
+  .contact-links { align-items: center; }
+  .contact-visual { order: -1; }
+  .nav-links { display: none; }
+  .nav-cta { display: inline-flex; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 3rem 0 2rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero-image-wrapper { width: 160px; height: 160px; }
+  section { padding: 2.5rem 0; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .leadership-stats { grid-template-columns: 1fr 1fr; }
+  .interests-grid { grid-template-columns: 1fr 1fr; }
+  .edu-card { grid-template-columns: 1fr; gap: 1rem; }
+  .achievement-item { grid-template-columns: 1fr; gap: 0.75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">FS<span>~/portfolio</span></a>
+    <ul class="nav-links">
+      <li><a href="#whoami">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hackathons">Hackathons</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://github.com/Fatim1509" class="nav-cta" target="_blank" rel="noopener">GitHub &rarr;</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge animate-in delay-1">Available for Opportunities</div>
+        <h1 class="animate-in delay-2">
+          <span class="name">Fatim Shahbaz</span>
+          <span class="pronouns">(He/Him)</span>
+        </h1>
+        <p class="hero-role animate-in delay-3">
+          AI / ML Engineer <span class="divider">|</span> Cybersecurity Researcher <span class="divider">|</span> Software Developer
+          <span class="hero-location">- Lahore, Pakistan</span>
+        </p>
+        <p class="hero-desc animate-in delay-4">
+          17-year-old results-driven developer with a proven track record of independently building and shipping production-grade applications. Proficient in Python, JavaScript, C/C++, and Bash with hands-on expertise in AI engineering, browser game development, full-stack automation, and cybersecurity research.
+        </p>
+        <p class="hero-philosophy animate-in delay-5">"1GB RAM Mindset - Constraint is an architecture decision."</p>
+        <div class="hero-actions animate-in delay-6">
+          <a href="https://github.com/Fatim1509" class="btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://devpost.com/Fatimshahbaz1509" class="btn-secondary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.002 1.61L0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61H6.002zm1.593 4.084h3.947l5.927 6.31-5.927 6.31H7.595l5.927-6.31-5.927-6.31z"/></svg>
+            Devpost
+          </a>
+        </div>
+        <div class="social-bar animate-in delay-7">
+          <a href="mailto:fatimshahbaz1509@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            fatimshahbaz1509@gmail.com
+          </a>
+          
+        </div>
+      </div>
+      <div class="hero-image animate-in delay-3">
+        <div style="position: relative;">
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-wrapper">
+            <img src="profile.png" alt="Fatim Shahbaz - AI/ML Engineer and Cybersecurity Researcher" id="profile-img">
+          </div>
+          <div class="hero-image-dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="whoami" class="animate-in delay-1">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x2318;</div>
+      <h2>WHOAMI</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="terminal-btn red"></span>
+        <span class="terminal-btn yellow"></span>
+        <span class="terminal-btn green"></span>
+        <span class="terminal-title">whoami - fatim@portfolio:~</span>
+      </div>
+      <div class="terminal-body">
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">name:</span>
+          <span class="terminal-value">Fatim Shahbaz</span>
+          <span class="terminal-comment"># 17 years old, self-taught</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">pronouns:</span>
+          <span class="terminal-value">He / Him</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">location:</span>
+          <span class="terminal-value">Lahore, Punjab, Pakistan</span>
+          <span class="terminal-comment"># originally from Kasur</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">roles:</span>
+          <span class="terminal-value">AI/ML Engineer | Cybersecurity Researcher | Software Developer</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">hardware_focus:</span>
+          <span class="terminal-value">1GB RAM Optimization, Lean Code Architecture</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">core_focus:</span>
+          <span class="terminal-value">Threat Intelligence, Multi-Agent AI Engineering, Browser Game Dev</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">education:</span>
+          <span class="terminal-value">High School (2023-Present) - Target: 90%+ | SAT Prep Active</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">targets:</span>
+          <span class="terminal-value">MIT, Caltech, CMU, Stanford, Princeton, Columbia, UPenn, SCU</span>
+        </p>
+        <p class="terminal-line">
+          <span class="terminal-prompt">&#x27A4;</span>
+          <span class="terminal-key">philosophy:</span>
+          <span class="terminal-value">"Constraint is not a disadvantage, it is an architecture decision."</span>
+          <span class="terminal-cursor"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="animate-in delay-2">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x25C8;</div>
+      <h2>TECHNICAL ARSENAL</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>&#x1F5A5; Programming Languages</h4>
+        <p>Python, JavaScript (ES6+), C, C++, Bash, Shell Scripting - all acquired through independent research and project building with zero formal instruction.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Bash</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F916; AI / Machine Learning</h4>
+        <p>Google Gemini API, Reinforcement Learning, TensorFlow, Model Training & Fine-tuning, Claude API - building real-world AI orchestration pipelines.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Gemini API</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">RL</span>
+          <span class="skill-tag">Claude API</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F310; Web Development</h4>
+        <p>HTML5, CSS3, PixiJS v7.3, Node.js, REST APIs, Canvas 2D - building browser games and full-stack applications from scratch.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">PixiJS</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Canvas 2D</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F427; Systems &amp; OS</h4>
+        <p>Linux (Arch Linux, Ubuntu), Android (ADB Integration), File System Management - comfortable in terminal-first environments.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Arch Linux</span>
+          <span class="skill-tag">Ubuntu</span>
+          <span class="skill-tag">ADB</span>
+          <span class="skill-tag">FS Management</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F680; DevOps &amp; Automation</h4>
+        <p>GitHub Actions, CI/CD Pipelines, GitHub API, Vercel, Automated Code Generation - reducing project bootstrapping from hours to under 60 seconds.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Auto-Gen</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F512; Cybersecurity</h4>
+        <p>Vulnerability Research, Network Security, Android Hardening, DNS Management, Privacy Engineering - building Sentinel-0D and Atlasnet.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Vuln Research</span>
+          <span class="skill-tag">NetSec</span>
+          <span class="skill-tag">Android Hardening</span>
+          <span class="skill-tag">Privacy Eng</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F6E0; Developer Tools</h4>
+        <p>Git, GitHub, VS Code, Notion, Postman, Google Cloud Platform - modern tooling for modern development workflows.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">GCP</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>&#x1F9E0; Soft Skills</h4>
+        <p>Strategic Problem-Solving, Self-directed Learning, Technical Documentation, Chess - competitive chess builds deep pattern recognition and multi-step strategic thinking.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Problem-Solving</span>
+          <span class="skill-tag">Self-Learning</span>
+          <span class="skill-tag">Chess</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="animate-in delay-3">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x26A1;</div>
+      <h2>CORE PROJECTS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card featured">
+        <div class="project-visual">
+          <span class="project-visual-text">RIME</span>
+        </div>
+        <div>
+          <span class="project-status hackathon">&#x1F3C6; Google Gemini AI Hackathon Entry</span>
+          <h3><a href="https://github.com/Fatim1509" target="_blank" rel="noopener">RIME 0.2 - Recursive Intelligence Multi-Agent Environment</a></h3>
+          <p>An advanced AI application leveraging the Google Gemini API for Google's official AI Hackathon, competing against developers worldwide. Designed multi-modal AI pipelines with context-aware generation, demonstrating real-world AI orchestration skills.</p>
+          <ul>
+            <li>Engineered multi-modal AI pipelines with context-aware generation</li>
+            <li>Demonstrated real-world AI orchestration and system design capability</li>
+            <li>Competed globally in the Google Gemini AI Hackathon 2024/25</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Google Gemini API</span>
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">Google Cloud</span>
+            <span class="tech-tag">Multi-Agent</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-status game">&#x1F3AE; Browser Game</span>
+        <h3><a href="https://github.com/Fatim1509" target="_blank" rel="noopener">Corruptors.io</a></h3>
+        <p>A fully-featured browser-based game targeting the CrazyGames publishing platform. Built from scratch with real-time 2D rendering, custom collision detection, and a smooth 60fps game loop.</p>
+        <ul>
+          <li>Real-time 2D rendering with PixiJS v7.3</li>
+          <li>Custom collision detection and 60fps game loop</li>
+          <li>Core game mechanics, enemy AI, scoring, and state management</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PixiJS v7.3</span>
+          <span class="tech-tag">HTML5 Canvas</span>
+          <span class="tech-tag">Game Architecture</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-status live">&#x25CF; Production</span>
+        <h3><a href="https://github.com/Fatim1509" target="_blank" rel="noopener">JARVIS - Personal AI Assistant</a></h3>
+        <p>A voice-activated AI assistant with persistent memory and full Android device control using ADB integration. Features a screenshot feedback loop for real-time contextual awareness.</p>
+        <ul>
+          <li>Voice-activated with persistent memory</li>
+          <li>Full Android device control via ADB</li>
+          <li>Screenshot feedback loop for real-time screen awareness</li>
+          <li>Modular architecture for future Raspberry Pi &amp; IoT expansion</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Claude API</span>
+          <span class="tech-tag">ADB</span>
+          <span class="tech-tag">TTS/STT</span>
+          <span class="tech-tag">Android</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-status open-source">&#x1F310; Open Source</span>
+        <h3><a href="https://github.com/Fatim1509" target="_blank" rel="noopener">github-autopilot</a></h3>
+        <p>A dual-mode automation system: a daily streak keeper generating meaningful commits via AI, and a project scaffolder that builds full repositories end-to-end from a single IDEA.md file.</p>
+        <ul>
+          <li>Reduced project bootstrapping from hours to under 60 seconds</li>
+          <li>AI-driven code generation pipelines with automated commit streaks</li>
+          <li>Secure secrets management using GitHub repository secrets</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">Claude API</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Bash</span>
+          <span class="tech-tag">CI/CD</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-status open-source">&#x1F512; Security</span>
+        <h3><a href="https://github.com/Fatim1509" target="_blank" rel="noopener">Sentinel-0D &amp; Atlasnet</a></h3>
+        <p>Cybersecurity research projects demonstrating vulnerability research, traffic analysis, and penetration testing fundamentals. Submitted to the Snow Fest competition.</p>
+        <ul>
+          <li>Live intrusion threat detection and proactive incident response</li>
+          <li>Advanced networking architecture for tool-to-agent communication</li>
+          <li>Android security hardening and DNS management (Rethink DNS / Orbot)</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Network Analysis</span>
+          <span class="tech-tag">Security Tools</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="hackathons" class="animate-in delay-4">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x2605;</div>
+      <h2>HACKATHONS &amp; COMPETITIONS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="hackathon-grid">
+      <article class="hackathon-card">
+        <div class="hackathon-badge-row">
+          <span class="hackathon-badge gold">&#x1F948; 2nd Place</span>
+          <span class="hackathon-badge date">Jan 19, 2026</span>
+        </div>
+        <h3>UMT National Hackathon - SSC-FEST 2026</h3>
+        <p class="location">University of Management &amp; Technology (UMT), Lahore</p>
+        <p>Secured <span class="highlight">2nd Position</span> in the Science Model Exhibition at the "Future Forward: Science, AI and Sustainability" festival. Competed against <span class="highlight">300+ participants</span> from O-Level, A-Level, and university programmes across Lahore, Kasur, and UMT. Awarded by the Dean of School of Science for a project on Clean Energy Solutions.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value">2nd</span>
+            <span class="stat-label">Place</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">300+</span>
+            <span class="stat-label">Competitors</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">3</span>
+            <span class="stat-label">Regions</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="hackathon-card">
+        <div class="hackathon-badge-row">
+          <span class="hackathon-badge finalist">&#x1F3C6; Global Entry</span>
+          <span class="hackathon-badge date">2024/25</span>
+        </div>
+        <h3>Google Gemini AI Hackathon</h3>
+        <p class="location">Global - Online Competition</p>
+        <p>Submitted <span class="highlight">RIME 0.2</span> as an official hackathon entry, competing against developers worldwide. Engineered an advanced AI application leveraging the Google Gemini API, designing multi-modal AI pipelines with context-aware generation that demonstrated real-world AI orchestration skills.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value">Global</span>
+            <span class="stat-label">Competition</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">RIME</span>
+            <span class="stat-label">Submission</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">AI</span>
+            <span class="stat-label">Focus</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="leadership" class="animate-in delay-5">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x25C9;</div>
+      <h2>CODE CATALYST CLUB</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="leadership-card">
+      <h3>Founder &amp; Lead Architect</h3>
+      <p class="role-title">Technical Peer-Learning Network</p>
+      <p>Established and architected a technical peer-learning network spanning across <strong>3 regional Pakistani colleges</strong>, directly coordinating open-source contributions, tool building, and error-taxonomy debugging for a close-knit group of <strong>37 student developers</strong>. The club fosters hands-on learning through real-world project building, collaborative debugging sessions, and open-source contribution drives.</p>
+      <div class="leadership-stats">
+        <div class="leadership-stat">
+          <span class="value">3</span>
+          <span class="label">Colleges</span>
+        </div>
+        <div class="leadership-stat">
+          <span class="value">37</span>
+          <span class="label">Developers</span>
+        </div>
+        <div class="leadership-stat">
+          <span class="value">&#x221E;</span>
+          <span class="label">Commits</span>
+        </div>
+        <div class="leadership-stat">
+          <span class="value">OSS</span>
+          <span class="label">Culture</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="animate-in delay-5">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x1F393;</div>
+      <h2>EDUCATION</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-icon">&#x1F393;</div>
+      <div>
+        <h3>High School - Secondary &amp; Higher Secondary Education</h3>
+        <p class="edu-meta">2023 - Present | Lahore, Pakistan</p>
+        <p>Active high school student with a target academic score of <strong>90%+</strong>. Core subjects include Mathematics, Computer Science, and Physics. Currently preparing for SAT through Khan Academy and refining English proficiency through the Duolingo English Test.</p>
+        <div class="edu-tags">
+          <span class="edu-tag">Mathematics</span>
+          <span class="edu-tag">Computer Science</span>
+          <span class="edu-tag">Physics</span>
+          <span class="edu-tag">SAT Prep</span>
+          <span class="edu-tag">DET</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" class="animate-in delay-6">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x1F3C6;</div>
+      <h2>ACHIEVEMENTS &amp; RECOGNITION</h2>
+      <div class="section-line"></div>
+    </div>
+    <ul class="achievements-list">
+      <li class="achievement-item">
+        <div class="achievement-icon gold">&#x1F948;</div>
+        <div>
+          <h4>2nd Position - Science Model Exhibition, SSC-FEST 2026</h4>
+          <p>University of Management and Technology (UMT), Lahore (Jan 19, 2026). Awarded by the Dean of School of Science for a project on Clean Energy Solutions at the "Future Forward: Science, AI and Sustainability" festival - competing against 300+ participants from O-Level, A-Level, and university programmes across Lahore, Kasur, and UMT.</p>
+        </div>
+      </li>
+      <li class="achievement-item">
+        <div class="achievement-icon hack">&#x1F3C6;</div>
+        <div>
+          <h4>Google Gemini AI Hackathon 2024/25 - Global Entry</h4>
+          <p>Submitted RIME 0.2 as an official hackathon entry, competing globally against developers worldwide. Engineered multi-modal AI pipelines with context-aware generation.</p>
+        </div>
+      </li>
+      
+      <li class="achievement-item">
+        <div class="achievement-icon code">&#x1F4BB;</div>
+        <div>
+          <h4>Professional Full-Stack GitHub Portfolio</h4>
+          <p>Deployed a professional full-stack GitHub portfolio (github.com/Fatim1509) featuring 5+ production-ready projects across AI, gaming, and security domains.</p>
+        </div>
+      </li>
+      <li class="achievement-item">
+        <div class="achievement-icon code">&#x2699;</div>
+        <div>
+          <h4>github-autopilot - CI/CD Automation System</h4>
+          <p>Independently designed and shipped a fully automated CI/CD code generation system adopted for personal and portfolio use. Reduced project bootstrapping time from hours to under 60 seconds.</p>
+        </div>
+      </li>
+      <li class="achievement-item">
+        <div class="achievement-icon hack">&#x1F9E0;</div>
+        <div>
+          <h4>Self-Taught Mastery of 6+ Programming Languages</h4>
+          <p>All skills acquired through independent research and project building with zero formal instruction. Includes Python, JavaScript, C, C++, Bash, and Shell Scripting.</p>
+        </div>
+      </li>
+      <li class="achievement-item">
+        <div class="achievement-icon code">&#x1F916;</div>
+        <div>
+          <h4>JARVIS AI Assistant - Senior-Level Achievement</h4>
+          <p>Built a custom JARVIS-style AI assistant with Android device control - a feat typically attempted only by experienced senior developers. Features voice activation, persistent memory, and ADB integration.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="interests" class="animate-in delay-6">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon">&#x2728;</div>
+      <h2>ADDITIONAL SKILLS &amp; INTERESTS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card">
+        <span class="interest-icon">&#x265F;</span>
+        <h4>Chess</h4>
+        <p>Competitive chess player - builds deep pattern recognition and multi-step strategic thinking</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">&#x1F3A8;</span>
+        <h4>Creative Arts</h4>
+        <p>Sketching and visual design - both traditional and digital media</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">&#x1F3B5;</span>
+        <h4>Music</h4>
+        <p>Vocalist and multi-instrument practitioner</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">&#x1F4AA;</span>
+        <h4>Fitness</h4>
+        <p>Structured calisthenics training (zero-equipment) - progressing toward handstand performance</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">&#x1F4DA;</span>
+        <h4>Languages</h4>
+        <p>Urdu (Native), English (Proficient, actively refining through DET preparation)</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">&#x1F4D6;</span>
+        <h4>Reading</h4>
+        <p>Avid reader with a focus on storytelling, narrative structure, and analytical critique</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section animate-in delay-7">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Let us build something extraordinary.</h2>
+        <p>17-year-old AI/ML Engineer, Cybersecurity Researcher, and Software Developer from Lahore, Pakistan. Open to collaborations, internships, and opportunities to push the boundaries of what is possible with lean, optimized code.</p>
+        <div class="contact-links">
+          <a href="mailto:fatimshahbaz1509@gmail.com" class="contact-link">
+            <span class="icon">&#x2709;</span>
+            fatimshahbaz1509@gmail.com
+          </a>
+          
+          <a href="https://github.com/Fatim1509" class="contact-link" target="_blank" rel="noopener">
+            <span class="icon">&#x1F4BB;</span>
+            github.com/Fatim1509
+          </a>
+          <a href="https://devpost.com/Fatimshahbaz1509" class="contact-link" target="_blank" rel="noopener">
+            <span class="icon">&#x1F3C6;</span>
+            devpost.com/Fatimshahbaz1509
+          </a>
+        </div>
+      </div>
+      <div class="contact-visual">
+        <div class="contact-visual-box">
+          <span class="big-text">FS</span>
+          <span class="sub-text">Fatim Shahbaz</span>
+          <span class="sub-text">AI / ML Engineer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 <strong>Fatim Shahbaz</strong>. Built with a 1GB RAM Mindset.</p>
+    <p>Lahore, Punjab, Pakistan | Self-taught | 17 years old</p>
+  </div>
+</footer>
+
+</body>
+</html>
